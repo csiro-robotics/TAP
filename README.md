@@ -19,14 +19,24 @@ augmentation and prototype calibration approach to enhance model generalization 
 </figcaption>
 </figure>
 
-## Requirements
+## Usage 
 
 <!-- ```plaintext -->
-The primary environment requirements are listed here. 
+Setup conda environment and install required packages.
 ```python
-- python==3.10.0
-- torch==1.13.1
-- torch-geometric==2.5.3 
+# Create environment
+conda create -n tap python=3.10 -y
+conda activate tap
+
+# Install requirements
+conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.6 -c pytorch -c nvidia
+
+# Clone TAP repo
+git clone https://github.com/csiro-robotics/TAP.git
+cd TAP
+
+# Install other requirements
+pip install -r requirements.txt
 ```
 <!-- ``` -->
 
